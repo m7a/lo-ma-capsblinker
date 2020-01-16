@@ -16,7 +16,7 @@ x-masysma-copyright: |
 Name
 ====
 
-ma_capsblinker and ma_capsblinker_shell -- make caps lock blink.
+`ma_capsblinker` and `ma_capsblinker_shell` -- make caps lock blink.
 
 Synopsis
 ========
