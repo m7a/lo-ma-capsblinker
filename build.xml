@@ -7,6 +7,7 @@
 <property name="mdpc.section"   value="utils"/>
 <property name="mdpc.arch"      value="any"/>
 <property name="mdpc.descrs"    value="make caps lock blink"/>
+<property name="mdpc.cpyear"    value="2013, 2020"/>
 <property name="mdpc.conflicts" value="mdvl-capsblinker, mdvl-scripts (&lt;= 1.0.337)"/>
 <property name="mdpc.descrl">
  This package includes the `ma_capsblinker` command which changes the LED status

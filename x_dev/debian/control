@@ -1,0 +1,21 @@
+Source: mdvl-capsblinker
+Maintainer: Linux-Fan <Ma_Sys.ma@web.de>
+Section: utils
+Priority: optional
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 8)
+
+Package: mdvl-capsblinker
+Architecture: any
+Conflicts: mdvl-scripts (<= 1.0.337)
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: make caps lock blink
+ This package includes the `ma_capsblinker` command which changes the LED status
+ for a given LED repeatedly.
+ .
+ Additionally, masysma-capsblinker.service is included to automatically start
+ the capsblinker at system boot.
+ .
+ Finally, there is also a script to achieve the same functionality by really
+ changing the capslock state which may be used as (a more resource-intensive)
+ fallback.
