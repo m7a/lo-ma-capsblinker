@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build">
+
+<!-- APPLICATION METADATA -->
+<property name="masysma.target" value="ma_capsblinker"/> 
+<property name="mdpc.name"      value="mdvl-ma-capsblinker"/>
+<property name="mdpc.section"   value="utils"/>
+<property name="mdpc.arch"      value="any"/>
+<property name="mdpc.descrs"    value="make caps lock blink"/>
+<property name="mdpc.conflicts" value="mdvl-capsblinker, mdvl-scripts (&lt;= 1.0.337)"/>
+<property name="mdpc.descrl">
+ This package includes the `ma_capsblinker` command which changes the LED status
+ for a given LED repeatedly.
+ .
+ Additionally, masysma-capsblinker.service is included to automatically start
+ the capsblinker at system boot.
+ .
+ Finally, there is also a script to achieve the same functionality by really
+ changing the capslock state which may be used as (a more resource-intensive)
+ fallback.
+</property>
+
+<property name="mdpc.file.install">
+ma_capsblinker /usr/bin
+ma_capsblinker_shell /usr/bin
+masysma-capsblinker.service /lib/systemd/system
+</property>
+
+<!-- CI INTEGRATION -->
+<target name="package_triggered" depends="package">
+	<property name="masysma.ci.trigger" value="newver"/>
+</target>
+<target name="package_triggered_i386" depends="package">
+	<property name="masysma.ci.trigger"     value="newver"/>
+	<property name="masysma.ci.runenv"      value="ssh"/>
+	<property name="masysma.ci.runenv.name" value="i386"/>
+</target>
+
+<!-- CONSTANT TPL IMPORT -->
+<property environment="env"/>
+<condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
+<property name="masysma.internal.includepath" location="${masysma.internal.includepath.rel}"/>
+<property name="masysma.internal.loadpath" value="${masysma.internal.includepath}/co-build/ant-build-template.xml"/>
+<condition property="masysma.internal.load" value="file://${masysma.internal.loadpath}" else="https://raw.githubusercontent.com/m7a/co-build/master/ant-build-template.xml"><resourceexists><file file="${masysma.internal.loadpath}"/></resourceexists></condition>
+<import><url url="${masysma.internal.load}"/></import>
+
+</project>

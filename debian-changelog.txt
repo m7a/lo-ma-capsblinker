@@ -1,0 +1,47 @@
+mdvl-ma-capsblinker (2.1.0) stable; urgency=medium
+
+  * Package created with MDPC 2
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Thu, 16 Jan 2020 22:24:04 +0100
+
+mdvl-ma-capsblinker (2.0.6) stable; urgency=medium
+
+  * Reeecompile.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Sun, 01 Sep 2019 23:35:19 +0200
+
+mdvl-ma-capsblinker (2.0.5) stable; urgency=medium
+
+  * Reecompile.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Sun, 01 Sep 2019 23:34:25 +0200
+
+mdvl-ma-capsblinker (2.0.4) stable; urgency=medium
+
+  * Recompile with gnat8.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Sun, 01 Sep 2019 23:30:20 +0200
+
+mdvl-ma-capsblinker (2.0.3) stable; urgency=medium
+
+  * Attempt to finally overwrite old version.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Thu, 07 Jun 2018 19:07:51 +0200
+
+mdvl-ma-capsblinker (2.0.2) stable; urgency=medium
+
+  * Update again to replace old versions in repo.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Thu, 07 Jun 2018 19:06:41 +0200
+
+mdvl-ma-capsblinker (2.0.1) stable; urgency=medium
+
+  * Update to surely replace all old installations
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Thu, 07 Jun 2018 19:03:55 +0200
+
+mdvl-ma-capsblinker (2.0.0) stable; urgency=medium
+
+  * mdvl-ma-capsblinker created as a separate debuild debian package.
+
+ -- Linux-Fan <Ma_Sys.ma@web.de>  Thu, 07 Jun 2018 18:59:12 +0200

@@ -1,0 +1,11 @@
+[Unit]
+After=local-fs.target
+Requires=local-fs.target
+Description=Ma_Sys.ma Capsblinker
+ 
+[Service]
+User=root
+ExecStart=/usr/bin/ma_capsblinker input0::capslock
+ 
+[Install]
+WantedBy=multi-user.target

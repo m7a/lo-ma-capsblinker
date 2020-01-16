@@ -1,0 +1,31 @@
+#!/bin/sh -e
+# Ma_Sys.ma Caps Lock Blinking Script 1.0.0, Copyright (c) 2018 Ma_sys.ma.
+# For further info send an e-mail to Ma_Sys.ma@web.de.
+
+# It is required to run this script as root. It should not have an effect
+# on the actual caps seen under X11. Cancel with CTRL-C at any time.
+# -> see: https://superuser.com/questions/362694/
+# 				use-caps-lock-led-as-hdd-led-or-custom-indicator
+
+
+dev=/dev/tty1
+
+if [ "$1" = "--help" ]; then
+	head -n 3 "$0" | tail -n 2 | cut -c 3-
+	echo
+	echo "USAGE $0 [device]"
+	exit 0
+elif [ -n "$1" ]; then
+	dev="$1"
+fi
+
+trap "setleds -caps < \"$dev\"; echo" INT TERM EXIT
+
+# sleep with . not portable...
+
+while true; do
+	setleds +caps < "$dev"
+	sleep 0.02
+	setleds -caps < "$dev"
+	sleep 0.98
+done
