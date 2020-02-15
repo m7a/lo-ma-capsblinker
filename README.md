@@ -5,9 +5,10 @@ title: Capsblinker
 date: 2020/01/16 22:31:25
 lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
-keywords: ["programs", "ada", "capsblinker", "linux"]
+keywords: ["programs", "ada", "capsblinker", "linux", "keyboard"]
 x-masysma-version: 2.1.0
 x-masysma-repository: https://www.github.com/m7a/lo-ma-capsblinker
+x-masysma-website: https://masysma.lima-city.de/11/ma_capsblinker.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
@@ -62,3 +63,9 @@ To compile this program, an Ada compiler is needed e. g. as provided by Debian
 package `gnat`. Additionally, the `ant` build tool is needed and can then be
 invoked by running `ant`. To build a Debian package (with the necessary
 dependencies installed), use `ant package`.
+
+See Also
+========
+
+ * [progress(32)](../32/progress.xhtml)
+ * [maerct(11)](maerct.xhtml)
