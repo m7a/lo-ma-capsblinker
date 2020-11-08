@@ -32,9 +32,9 @@ procedure Ma_Capsblinker is
 	begin
 		while Termination_Status.Is_Online loop
 			Write_File(File, "1");
-			delay 0.02;
+			delay 0.15;
 			Write_File(File, "0");
-			delay 0.98;
+			delay 0.85;
 		end loop;
 	end Run;
 

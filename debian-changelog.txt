@@ -1,3 +1,10 @@
+mdvl-ma-capsblinker (2.1.1) stable; urgency=medium
+
+  * Increase light-on delay from 0.02s to 0.15s because otherwise many blinks
+    would go lost on a desktop system with slower kBD than the Laptop's.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Sun, 08 Nov 2020 19:16:57 +0100
+
 mdvl-ma-capsblinker (2.1.0) stable; urgency=medium
 
   * Package created with MDPC 2
