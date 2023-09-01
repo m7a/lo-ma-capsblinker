@@ -8,7 +8,7 @@ author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["programs", "ada", "capsblinker", "linux", "keyboard"]
 x-masysma-version: 2.1.0
 x-masysma-repository: https://www.github.com/m7a/lo-ma-capsblinker
-x-masysma-website: https://masysma.lima-city.de/11/ma_capsblinker.xhtml
+x-masysma-website: https://masysma.net/11/ma_capsblinker.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
